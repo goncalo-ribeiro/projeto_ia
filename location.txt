@@ -1,0 +1,4 @@
+caminho das imagens => properties
+parser => EightPuzzleAgent
+matrizInicial => Main Frame
+renderer => PuzzleTileCellRenderer
