@@ -30,34 +30,25 @@ public class PuzzleTileCellRenderer extends JLabel implements TableCellRenderer 
             setIcon(loader.getIcon(Properties.EMPILHADORA_IMAGE));
         }else if(((Integer) value).intValue() == -1){
             setIcon(loader.getIcon(Properties.PORTA_IMAGE));
-        }
-        else{
-            System.out.println(calculaOrientacaoPrefixo(((Integer) value).intValue()));
+        } else if (((Integer) value).intValue() == 0) {
             setIcon(loader.getIcon(Properties.EMPTY_IMAGE));
+        } else {
+            setIcon(loader.getIcon(
+                    Properties.IMAGE_PREFIX + calculaOrientacaoPrefixo(((Integer) value).intValue()) + Properties.IMAGE_SUFFIX));
         }
-
-//        if (((Integer) value).intValue() == 0) {
-//            setIcon(loader.getIcon(Properties.EMPTY_IMAGE));
-//        } else {
-//            if (((Integer) value).intValue() == 1) {
-//                setIcon(loader.getIcon(Properties.EMPILHADORA_IMAGE));
-//            }else{
-//                if (((Integer) value).intValue() == 10) {
-//                    setIcon(loader.getIcon(Properties.PORTA_IMAGE));
-//                }
-//            }
-//            //setIcon(loader.getIcon(Properties.IMAGE_PREFIX + ((Integer) value).intValue() + Properties.IMAGE_SUFFIX));
-//        }
         return this;
     }
 
     private String calculaOrientacaoPrefixo(Integer numero){
         String orientacao = "";
-        Integer divisao = numero / 2;
         String numeroString = "";
-        System.out.print("numero = "+ numero + "\tdivisao = " + divisao);
-        if (divisao != 1 || divisao != 0) {
-            numeroString = divisao.toString() ;
+        Integer divisao = numero / 2;
+        //System.out.print("numero = "+ numero + "\tdivisao = " + divisao + "\t");
+
+        if (divisao != 1) {
+            numeroString = divisao.toString();
+        } else {
+            numeroString = "";
         }
         if (numero % 2 == 0)
         {

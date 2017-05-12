@@ -6,9 +6,6 @@ import agent.State;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
-import eightpuzzle.ActionUp;
-import eightpuzzle.EightPuzzleState;
 import utils.NodeCollection;
 
 public abstract class GraphSearch<L extends NodeCollection> implements SearchMethod {
@@ -17,13 +14,11 @@ public abstract class GraphSearch<L extends NodeCollection> implements SearchMet
     protected Set<State> explored = new HashSet<State>();
     protected Statistics statistics = new Statistics();    
     protected boolean stopped;
-    protected EightPuzzleState goalState;
 
     @Override
     public Solution search(Problem problem) {
         statistics.reset();
         stopped = false;
-        goalState = new EightPuzzleState(EightPuzzleState.goalMatrix);
         return graphSearch(problem);
     }
 
@@ -41,18 +36,17 @@ public abstract class GraphSearch<L extends NodeCollection> implements SearchMet
      */
     protected Solution graphSearch(Problem problem) {
         frontier.clear();
+        explored.clear();
         frontier.add(new Node(problem.getInitialState()));
 
-        explored.clear();
-
-        while (!frontier.isEmpty()) {
-            Node node = frontier.remove();
-            if (problem.isGoal(node.getState())) {
-                return new Solution (problem, node);
+        while (!frontier.isEmpty() && !stopped) {
+            Node n = frontier.poll();
+            if (problem.isGoal(n.getState())) {
+                return new Solution(problem, n);
             }
-            explored.add(node.getState());
-            List<State> successors = problem.executeActions(node.getState());
-            addSuccessorsToFrontier(successors, node);
+            explored.add(n.getState());
+            List<State> successors = problem.executeActions(n.getState());
+            addSuccessorsToFrontier(successors, n);
             computeStatistics(successors.size());
         }
         return null;

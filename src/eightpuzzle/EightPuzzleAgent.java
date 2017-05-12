@@ -39,7 +39,6 @@ public class EightPuzzleAgent extends Agent<EightPuzzleState>{
         }
         initialEnvironment = new EightPuzzleState(matrix);
         resetEnvironment();
-        System.out.println("**************************************************************************");
         return environment;
     }
 }

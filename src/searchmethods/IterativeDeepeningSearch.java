@@ -3,8 +3,6 @@ package searchmethods;
 import agent.Problem;
 import agent.Solution;
 import agent.State;
-import eightpuzzle.EightPuzzleState;
-
 import java.util.List;
 
 public class IterativeDeepeningSearch extends DepthFirstSearch {
@@ -26,14 +24,12 @@ public class IterativeDeepeningSearch extends DepthFirstSearch {
     public Solution search(Problem problem) {
         statistics.reset();
         stopped = false;
-        goalState = new EightPuzzleState(EightPuzzleState.goalMatrix);
-
         limit = 0;
         Solution solution;
         do {
             solution = graphSearch(problem);
-            limit ++;
-        } while (solution != null);
+            limit++;
+        } while (solution == null);
 
         return solution;
     }
@@ -43,19 +39,16 @@ public class IterativeDeepeningSearch extends DepthFirstSearch {
         frontier.clear();
         frontier.add(new Node(problem.getInitialState()));
 
-        explored.clear();
-
-        while (!frontier.isEmpty()) {
-            Node node = frontier.remove();
-            if (node.getDepth() == limit && problem.isGoal(node.getState())) {
-                return new Solution (problem, node);
+        while (!frontier.isEmpty() && !stopped) {
+            Node n = (Node) frontier.poll();
+            if (n.getDepth() == limit && problem.isGoal(n.getState())) {
+                return new Solution(problem, n);
             }
-            explored.add(node.getState());
-            List<State> successors = problem.executeActions(node.getState());
-
-            if (node.getDepth() != limit) {
-                addSuccessorsToFrontier(successors, node);
+            List<State> successors = problem.executeActions(n.getState());
+            if (n.getDepth() < limit) {
+                addSuccessorsToFrontier(successors, n);
             }
+            computeStatistics(successors.size());
         }
         return null;
     }
@@ -65,3 +58,28 @@ public class IterativeDeepeningSearch extends DepthFirstSearch {
         return "Iterative deepening search";
     }
 }
+
+
+/*
+ * 
+ public class IterativeDeepeningSearch implements SearchMethod {
+
+    @Override
+    public Solution search(Problem problem) {
+        DepthLimitedSearch dls = new DepthLimitedSearch();
+        Solution solution;
+        for (int i = 0;; i++) {
+            dls.setLimit(i);
+            solution = dls.search(problem);
+            if (solution != null) {
+                return solution;
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Iterative deepening search";
+    }
+ *
+ */
