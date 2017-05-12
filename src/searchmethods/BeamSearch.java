@@ -2,6 +2,8 @@ package searchmethods;
 
 import agent.State;
 import java.util.List;
+
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import utils.NodePriorityQueue;
 
 public class BeamSearch extends AStarSearch {
@@ -19,12 +21,13 @@ public class BeamSearch extends AStarSearch {
     @Override
     public void addSuccessorsToFrontier(List<State> successors, Node parent) {
         super.addSuccessorsToFrontier(successors, parent);
-        Node[] frontierAsArray = frontier.toArray(new Node[0]);
-        for (int i = frontierAsArray.length - 1; i >= 0; i++) {
-            frontier.remove(frontierAsArray[i]);
-            if (frontier.size() <= beamSize) {
-                break;
+        if (frontier.size() > beamSize) {
+            NodePriorityQueue aux = new NodePriorityQueue();
+
+            for (int i = 0; i < beamSize; i++) {
+                aux.add(frontier.poll());
             }
+            frontier = aux;
         }
     }
 

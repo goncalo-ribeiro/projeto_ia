@@ -7,7 +7,9 @@ import java.util.Arrays;
 
 public class EightPuzzleState extends State implements Cloneable {
 
-
+    public static final int[][] goalMatrix = {{0, 1, 2},
+            {3, 4, 5},
+            {6, 7, 8}};
     static final int[] linesfinalMatrix = {0, 0, 0, 1, 1, 1, 2, 2, 2};
     static final int[] colsfinalMatrix = {0, 1, 2, 0, 1, 2, 0, 1, 2};
     public static final int SIZE = 6;
