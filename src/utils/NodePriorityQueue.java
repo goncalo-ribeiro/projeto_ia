@@ -25,13 +25,6 @@ public class NodePriorityQueue extends PriorityQueue<Node> implements NodeCollec
         super.clear();
         contents.clear();
     }
-
-    @Override
-    public Node poll() {
-        Node n = super.poll();
-        contents.remove(n.getState());
-        return n;
-    }
     
     @Override
     public boolean remove(Object o) {
@@ -47,6 +40,13 @@ public class NodePriorityQueue extends PriorityQueue<Node> implements NodeCollec
         Node no = super.remove();
         contents.remove(no.getState());
         return no;
+    }
+
+    @Override
+    public Node poll() {
+        Node n = super.poll();
+        contents.remove(n.getState());
+        return n;
     }
 
     @Override

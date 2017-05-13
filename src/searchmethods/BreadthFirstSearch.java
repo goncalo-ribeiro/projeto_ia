@@ -12,6 +12,7 @@ public class BreadthFirstSearch extends GraphSearch<NodeLinkedList> {
     
     public void addSuccessorsToFrontier(List<State> successors, Node parent) {
         for (State s : successors) {
+            System.out.println(s.toString());
             if (!(frontier.containsState(s) || explored.contains(s))) {
                 frontier.addLast(new Node(s, parent));
             }

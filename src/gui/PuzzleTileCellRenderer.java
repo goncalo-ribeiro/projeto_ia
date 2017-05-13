@@ -16,9 +16,9 @@ public class PuzzleTileCellRenderer extends JLabel implements TableCellRenderer 
     }
 
     public Component getTableCellRendererComponent(JTable table, Object value,
-            boolean isSelected,
-            boolean hasFocus, int row,
-            int column) {
+                                                   boolean isSelected,
+                                                   boolean hasFocus, int row,
+                                                   int column) {
 
 //        String text = (((Integer) value).intValue() == 0) ? "" : ((Integer) value).toString();
 //        setText(text);
