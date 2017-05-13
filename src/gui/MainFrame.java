@@ -2,9 +2,9 @@ package gui;
 
 import agent.Heuristic;
 import agent.Solution;
-import eightpuzzle.EightPuzzleAgent;
-import eightpuzzle.EightPuzzleProblem;
-import eightpuzzle.EightPuzzleState;
+import forkliftpuzzle.ForkLiftPuzzleAgent;
+import forkliftpuzzle.ForkliftPuzzleProblem;
+import forkliftpuzzle.ForkliftPuzzleState;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.FlowLayout;
@@ -40,7 +40,7 @@ public class MainFrame extends JFrame {
             {0,0,0,0,0,0},
             {0,0,0,0,0,0},
             {0,0,0,0,0,0}};
-    private EightPuzzleAgent agent = new EightPuzzleAgent(new EightPuzzleState(initialMatrix));
+    private ForkLiftPuzzleAgent agent = new ForkLiftPuzzleAgent(new ForkliftPuzzleState(initialMatrix));
     private JComboBox comboBoxSearchMethods;
     private JComboBox comboBoxHeuristics;
     private JLabel labelSearchParameter = new JLabel("limit/beam size:");
@@ -65,7 +65,7 @@ public class MainFrame extends JFrame {
     private void jbInit() throws Exception {
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setTitle("Eight Puzzle");
+        this.setTitle("Forklift Puzzle");
 
         JPanel contentPane = (JPanel) this.getContentPane();
         contentPane.setLayout(new BorderLayout());
@@ -175,7 +175,7 @@ public class MainFrame extends JFrame {
                 buttonStop.setEnabled(true);
                 try {
                     prepareSearchAlgorithm();
-                    EightPuzzleProblem problem = new EightPuzzleProblem((EightPuzzleState) agent.getEnvironment().clone());
+                    ForkliftPuzzleProblem problem = new ForkliftPuzzleProblem((ForkliftPuzzleState) agent.getEnvironment().clone());
                     agent.solveProblem(problem);
                 } catch (Exception e) {
                     e.printStackTrace(System.err);

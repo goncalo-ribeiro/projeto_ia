@@ -7,9 +7,9 @@ public class Agent<E extends State> {
 
     protected E environment;
     protected ArrayList<SearchMethod> searchMethods;
-    protected SearchMethod searchMethod; // search method selecionado
+    protected SearchMethod searchMethod;
     protected ArrayList<Heuristic> heuristics;
-    protected Heuristic heuristic; //  heuristica selecionada
+    protected Heuristic heuristic;
     protected Solution solution;
 
     public Agent(E environment) {
