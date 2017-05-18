@@ -42,7 +42,7 @@ public class PuzzleTileCellRenderer extends JLabel implements TableCellRenderer 
     private String calculaOrientacaoPrefixo(Integer numero){
         String orientacao = "";
         String numeroString = "";
-        Integer divisao = numero / 2;
+        Integer divisao = (numero%10) / 2;
         //System.out.print("numero = "+ numero + "\tdivisao = " + divisao + "\t");
 
         if (divisao != 1) {

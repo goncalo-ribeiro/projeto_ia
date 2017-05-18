@@ -1,11 +1,15 @@
 package agent;
 
 
+import forkliftpuzzle.Peça;
+
 public abstract class Action <S extends State>{
     private double cost;
+    protected int id;
 
-    public Action(double cost){
+    public Action(double cost, int id){
         this.cost = cost;
+        this.id = id;
     }
 
     public abstract void execute(S State);
