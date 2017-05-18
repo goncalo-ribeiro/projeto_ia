@@ -1,5 +1,7 @@
 package agent;
 
+import forkliftpuzzle.Peça;
+
 public abstract class State{
 
     /**

@@ -38,7 +38,7 @@ public abstract class GraphSearch<L extends NodeCollection> implements SearchMet
         frontier.clear();
         explored.clear();
         frontier.add(new Node(problem.getInitialState()));
-        System.out.println("estado inicial = \n" + problem.getInitialState());
+        //System.out.println("estado inicial = \n" + problem.getInitialState());
         while (!frontier.isEmpty() && !stopped) {
             Node n = frontier.poll();
             if (problem.isGoal(n.getState())) {
