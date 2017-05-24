@@ -2,15 +2,14 @@ package forkliftpuzzle;
 
 import agent.Heuristic;
 
-public class HeuristicTileDistance extends Heuristic<ForkliftPuzzleProblem, ForkliftPuzzleState>{
+public class HeuristicDistanceToDoor extends Heuristic<ForkliftPuzzleProblem, ForkliftPuzzleState> {
 
-    public double compute(ForkliftPuzzleState state){
-        //TODO HeuristicTileDistance
-        return 0;
+    public double compute(ForkliftPuzzleState state) {
+        return state.computeDistanceToDoor();
     }
-    
+
     @Override
     public String toString(){
-        return "Tiles distance to final position";
+        return "Distance to Door";
     }
 }

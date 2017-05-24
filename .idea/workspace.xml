@@ -2,51 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="589482b1-6222-430b-a59b-f74644a5a09e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/ActionDownwards.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/ActionUpwards.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ActionDown.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ActionLeft.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ActionRight.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ActionUp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/puzzles/puzzle_9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ActionDown.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ActionLeft.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ActionRight.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ActionUp.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/agent/Action.class" afterPath="$PROJECT_DIR$/out/production/Search/agent/Action.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/agent/State.class" afterPath="$PROJECT_DIR$/out/production/Search/agent/State.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ActionBackwards.class" afterPath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ActionBackwards.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ActionForward.class" afterPath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ActionForward.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/HeuristicAmmountOfBlockedBlocksInPath.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/HeuristicTileDistance.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/HeuristicTilesOutOfPlace.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ForkLiftPuzzleAgent.class" afterPath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ForkLiftPuzzleAgent.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ForkliftPuzzleProblem.class" afterPath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ForkliftPuzzleProblem.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ForkliftPuzzleState.class" afterPath="$PROJECT_DIR$/out/production/Search/forkliftpuzzle/ForkliftPuzzleState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/gui/PuzzleTileCellRenderer.class" afterPath="$PROJECT_DIR$/out/production/Search/gui/PuzzleTileCellRenderer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/searchmethods/BreadthFirstSearch.class" afterPath="$PROJECT_DIR$/out/production/Search/searchmethods/BreadthFirstSearch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Search/searchmethods/GraphSearch.class" afterPath="$PROJECT_DIR$/out/production/Search/searchmethods/GraphSearch.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agent/Action.java" afterPath="$PROJECT_DIR$/src/agent/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/agent/State.java" afterPath="$PROJECT_DIR$/src/agent/State.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ActionBackwards.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/ActionBackwards.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ActionForward.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/ActionForward.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/Coordenadas.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/Coordenadas.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/puzzle_0.txt" afterPath="$PROJECT_DIR$/puzzle_0.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ForkLiftPuzzleAgent.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/ForkLiftPuzzleAgent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleProblem.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleProblem.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/Peça.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/Peça.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/PeçaHorizontal.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/PeçaHorizontal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/PeçaVertical.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/PeçaVertical.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gui/PuzzleTileCellRenderer.java" afterPath="$PROJECT_DIR$/src/gui/PuzzleTileCellRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/searchmethods/BreadthFirstSearch.java" afterPath="$PROJECT_DIR$/src/searchmethods/BreadthFirstSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/searchmethods/GraphSearch.java" afterPath="$PROJECT_DIR$/src/searchmethods/GraphSearch.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/HeuristicTileDistance.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/HeuristicDistanceToDoor.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/forkliftpuzzle/HeuristicTilesOutOfPlace.java" afterPath="$PROJECT_DIR$/src/forkliftpuzzle/HeuristicAmountOfBlocksInPath.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,47 +27,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ForkliftPuzzleProblem.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ForkliftPuzzleProblem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleProblem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="937">
+              <caret line="66" column="59" lean-forward="false" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
               <folding>
                 <element signature="e#1353#1374#0" expanded="true" />
-                <element signature="method#isGoal#0;class#ForkliftPuzzleProblem#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForkliftPuzzleState.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="165" column="57" lean-forward="false" selection-start-line="165" selection-start-column="57" selection-end-line="165" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1663#1676#0" expanded="true" />
-                <element signature="method#adicionarPeçaHorizontal#0;class#ForkliftPuzzleState#0" expanded="false" />
-                <element signature="method#executeAction#0;class#ForkliftPuzzleState#0" expanded="false" />
-                <element signature="method#canMoveForward#0;class#ForkliftPuzzleState#0" expanded="false" />
-                <element signature="method#canMoveBackwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-                <element signature="method#canMoveUpwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-                <element signature="method#moveUpwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-                <element signature="method#moveDownwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-                <element signature="e#10293#10317#0" expanded="true" />
-                <marker date="1495139616453" expanded="true" signature="11918:11923" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeçaHorizontal.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/PeçaHorizontal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="37" column="70" lean-forward="false" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -126,6 +61,10 @@
       <find>syst</find>
       <find>coordenadaMaisAcima</find>
       <find>system</find>
+      <find>peçasVer</find>
+      <find>4.</find>
+      <find>cima</find>
+      <find>system.out</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -159,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/searchmethods/GraphSearch.java" />
         <option value="$PROJECT_DIR$/src/searchmethods/BreadthFirstSearch.java" />
         <option value="$PROJECT_DIR$/src/gui/PuzzleTileCellRenderer.java" />
-        <option value="$PROJECT_DIR$/src/forkliftpuzzle/ForkLiftPuzzleAgent.java" />
         <option value="$PROJECT_DIR$/src/agent/Action.java" />
         <option value="$PROJECT_DIR$/src/forkliftpuzzle/ActionUpwards.java" />
         <option value="$PROJECT_DIR$/src/forkliftpuzzle/ActionDownwards.java" />
@@ -167,10 +105,15 @@
         <option value="$PROJECT_DIR$/src/forkliftpuzzle/Peça.java" />
         <option value="$PROJECT_DIR$/src/forkliftpuzzle/ActionForward.java" />
         <option value="$PROJECT_DIR$/src/forkliftpuzzle/ActionBackwards.java" />
-        <option value="$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleProblem.java" />
         <option value="$PROJECT_DIR$/src/gui/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java" />
         <option value="$PROJECT_DIR$/src/forkliftpuzzle/PeçaHorizontal.java" />
+        <option value="$PROJECT_DIR$/src/gui/Main.java" />
+        <option value="$PROJECT_DIR$/src/forkliftpuzzle/HeuristicAmountOfBlocksInPath.java" />
+        <option value="$PROJECT_DIR$/src/forkliftpuzzle/HeuristicDistanceToDoor.java" />
+        <option value="$PROJECT_DIR$/src/forkliftpuzzle/HeuristicAmmountOfBlockedBlocksInPath.java" />
+        <option value="$PROJECT_DIR$/src/forkliftpuzzle/ForkLiftPuzzleAgent.java" />
+        <option value="$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleProblem.java" />
+        <option value="$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java" />
       </list>
     </option>
   </component>
@@ -216,50 +159,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projeto_ia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="searchmethods" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projeto_ia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forkliftpuzzle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projeto_ia" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="agent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -378,14 +281,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/projeto_ia_johnny" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -843,12 +744,17 @@
       <workItem from="1494668287117" duration="6963000" />
       <workItem from="1495030188456" duration="634000" />
       <workItem from="1495036223895" duration="4110000" />
-      <workItem from="1495110257635" duration="29312000" />
+      <workItem from="1495110257635" duration="30966000" />
+      <workItem from="1495194402285" duration="696000" />
+      <workItem from="1495284888974" duration="1912000" />
+      <workItem from="1495528792242" duration="845000" />
+      <workItem from="1495634974926" duration="5317000" />
+      <workItem from="1495649987507" duration="6671000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47816000" />
+    <option name="totallyTimeSpent" value="64911000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -861,7 +767,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -870,23 +775,23 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31643626" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31643626" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31643626" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75268817" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19213313" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20196672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24886535" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39938557" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -942,15 +847,21 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java</url>
-          <line>171</line>
+          <line>180</line>
           <properties />
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java</url>
+          <line>397</line>
+          <properties />
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="50" />
+      <option name="time" value="54" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -959,20 +870,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/utils/NodePriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchmethods/IterativeDeepeningSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/searchmethods/DepthFirstSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -992,17 +889,8 @@
         <state relative-caret-position="102">
           <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1663#1676#0" expanded="true" />
-            <element signature="method#adicionarPeçaHorizontal#0;class#ForkliftPuzzleState#0" expanded="false" />
             <element signature="method#executeAction#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#canMoveForward#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#canMoveBackwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#canMoveUpwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#moveUpwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#moveDownwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="e#10293#10317#0" expanded="true" />
-            <marker date="1495139616453" expanded="true" signature="11918:11923" ph="{...}" />
+            <marker date="1495663482729" expanded="true" signature="12094:12099" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1019,24 +907,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/searchmethods/InformedSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/searchmethods/AStarSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1053,32 +927,7 @@
           <caret line="13" column="67" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="67" />
           <folding>
             <element signature="e#1353#1374#0" expanded="true" />
-            <element signature="method#isGoal#0;class#ForkliftPuzzleProblem#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/PuzzleTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/HeuristicTilesOutOfPlace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/HeuristicTileDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,38 +953,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionLeft.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionRight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionDown.java" />
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionLeft.java" />
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionRight.java" />
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionUp.java" />
     <entry file="file://$PROJECT_DIR$/src/agent/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -1148,7 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,7 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="4189" column="0" lean-forward="false" selection-start-line="4189" selection-start-column="0" selection-end-line="4189" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,9 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="594" column="0" lean-forward="false" selection-start-line="594" selection-start-column="0" selection-end-line="594" selection-end-column="0" />
-          <folding>
-            <element signature="e#23651#23652#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1174,10 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="e#1855#1856#0" expanded="false" />
-            <element signature="e#1901#1902#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,29 +1001,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkLiftPuzzleListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/searchmethods/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="e#648#649#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1219,7 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1227,7 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1235,25 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-117">
           <caret line="333" column="0" lean-forward="true" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/PuzzleTileCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkLiftPuzzleAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
-          <folding>
-            <marker date="1495133369710" expanded="true" signature="954:1479" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1261,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1269,7 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1286,9 +1055,9 @@
         <state relative-caret-position="238">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="false" />
+            <element signature="e#204#205#0" expanded="false" />
+            <element signature="e#336#337#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1297,15 +1066,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/Peça.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,35 +1074,6 @@
         <state relative-caret-position="34">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="33" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding>
-            <element signature="e#1353#1374#0" expanded="true" />
-            <element signature="method#isGoal#0;class#ForkliftPuzzleProblem#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionForward.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#485#486#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1373,31 +1104,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java">
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkLiftPuzzleListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="165" column="57" lean-forward="false" selection-start-line="165" selection-start-column="57" selection-end-line="165" selection-end-column="57" />
+        <state relative-caret-position="34">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/Peça.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1663#1676#0" expanded="true" />
-            <element signature="method#adicionarPeçaHorizontal#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#executeAction#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#canMoveForward#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#canMoveBackwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#canMoveUpwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#moveUpwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="method#moveDownwards#0;class#ForkliftPuzzleState#0" expanded="false" />
-            <element signature="e#10293#10317#0" expanded="true" />
-            <marker date="1495139616453" expanded="true" signature="11918:11923" ph="{...}" />
+            <element signature="e#700#701#0" expanded="false" />
+            <element signature="e#734#735#0" expanded="false" />
+            <element signature="e#760#761#0" expanded="false" />
+            <element signature="e#785#786#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ActionForward.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding>
+            <element signature="e#438#439#0" expanded="false" />
+            <element signature="e#485#486#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/HeuristicDistanceToDoor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="e#302#303#0" expanded="false" />
+            <element signature="e#343#344#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="330" column="19" lean-forward="false" selection-start-line="330" selection-start-column="19" selection-end-line="330" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/PuzzleTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/agent/Heuristic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/searchmethods/AStarSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="70" lean-forward="true" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/PeçaHorizontal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="37" column="70" lean-forward="false" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+        <state relative-caret-position="-355">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/HeuristicAmmountOfBlockedBlocksInPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkLiftPuzzleAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+          <folding>
+            <marker date="1495655501968" expanded="true" signature="1222:1747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/HeuristicAmountOfBlocksInPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/PuzzleTileCellRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="44" column="37" lean-forward="false" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="116" column="110" lean-forward="false" selection-start-line="116" selection-start-column="110" selection-end-line="116" selection-end-column="110" />
+          <folding>
+            <element signature="method#executeAction#0;class#ForkliftPuzzleState#0" expanded="false" />
+            <marker date="1495663482729" expanded="true" signature="12094:12099" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forkliftpuzzle/ForkliftPuzzleProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="937">
+          <caret line="66" column="59" lean-forward="false" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
+          <folding>
+            <element signature="e#1353#1374#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

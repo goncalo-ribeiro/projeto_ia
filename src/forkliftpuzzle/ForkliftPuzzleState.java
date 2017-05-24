@@ -20,8 +20,8 @@ public class ForkliftPuzzleState extends State implements Cloneable {
     public HashMap<Integer, PeçaVertical> hashVertical;
     public static final int SIZE = 6;
     private int[][] matrix;
-    private int lineForkLift;
-    private int columnForkLift;
+    public int lineForkLift;
+    public int columnForkLift;
 
     public ForkliftPuzzleState(int[][] matrix) {
         this.matrix = new int[matrix.length][matrix.length];
@@ -114,7 +114,7 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         Coordenadas coordenadaMaisAFrente = peça.getCoordenadaMaisAFrente();
 
         if (coordenadaMaisAFrente.getColuna() == 5
-                || matrix[coordenadaMaisAFrente.getLinha()][coordenadaMaisAFrente.getColuna() + 1] != 0){
+                || matrix[coordenadaMaisAFrente.getLinha()][coordenadaMaisAFrente.getColuna() + 1] > 0){//TODO
             return false;
         }
 
@@ -122,8 +122,8 @@ public class ForkliftPuzzleState extends State implements Cloneable {
     }
 
     public void moveForward(int idPeça) {
-        System.out.println("MOVE FORWARD");
-        System.out.println(this);
+        //System.out.println("MOVE FORWARD");
+        //System.out.println(this);
 
         PeçaHorizontal peçaHorizontal = hashHorizontal.get(idPeça);
 
@@ -134,8 +134,12 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         matrix[coordenadasMaisParaTras.getLinha()][coordenadasMaisParaTras.getColuna()] = 0;
         matrix[coordenadasMaisAFrente.getLinha()][coordenadasMaisAFrente.getColuna()+1] = valorPeça;
 
+        if (idPeça == 1) {
+            columnForkLift++;
+        }
+
         hashHorizontal.replace(idPeça, peçaHorizontal.paraFrente());
-        System.out.println(this);
+        //System.out.println(this);
     }
 
     public boolean canMoveBackwards(int idPeça) {
@@ -143,7 +147,7 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         Coordenadas coordenadaMaisParaTras = peça.getCoordenadaMaisParaTras();
 
         if (coordenadaMaisParaTras.getColuna() == 0
-                || matrix[coordenadaMaisParaTras.getLinha()][coordenadaMaisParaTras.getColuna() - 1] != 0){
+                || matrix[coordenadaMaisParaTras.getLinha()][coordenadaMaisParaTras.getColuna() - 1] != 0){//TODO
             return false;
         }
 
@@ -151,8 +155,8 @@ public class ForkliftPuzzleState extends State implements Cloneable {
     }
 
     public void moveBackwards(int idPeça) {
-        System.out.println("MOVE BACKWARDS");
-        System.out.println(this);
+        //System.out.println("MOVE BACKWARDS");
+        //System.out.println(this);
 
         PeçaHorizontal peçaHorizontal = hashHorizontal.get(idPeça);
 
@@ -163,8 +167,13 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         matrix[coordenadasMaisParaTras.getLinha()][coordenadasMaisParaTras.getColuna() - 1] = valorPeça;
         matrix[coordenadasMaisAFrente.getLinha()][coordenadasMaisAFrente.getColuna()] = 0;
 
+
+        if (idPeça == 1) {
+            columnForkLift--;
+        }
+
         hashHorizontal.replace(idPeça, peçaHorizontal.paraTras());
-        System.out.println(this);
+        //System.out.println(this);
     }
 
     public boolean canMoveUpwards(int idPeça) {
@@ -172,7 +181,7 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         Coordenadas coordenadaMaisAcima = peça.getCoordenadaMaisAcima();
 
         if (coordenadaMaisAcima.getLinha() == 0
-                || matrix[coordenadaMaisAcima.getLinha() - 1][coordenadaMaisAcima.getColuna()] != 0){
+                || matrix[coordenadaMaisAcima.getLinha() - 1][coordenadaMaisAcima.getColuna()] > 0){
             return false;
         }
 
@@ -180,11 +189,11 @@ public class ForkliftPuzzleState extends State implements Cloneable {
     }
 
     public void moveUpwards(int idPeça) {
-        System.out.println("MOVE UPWARDS");
-        System.out.println(this);
+        //System.out.println("MOVE UPWARDS");
+        //System.out.println(this);
 
         PeçaVertical peçaVertical = hashVertical.get(idPeça);
-        System.out.println(idPeça);
+        //System.out.println(idPeça);
         Coordenadas coordenadasMaisAcima = peçaVertical.getCoordenadaMaisAcima();
         Coordenadas coordenadasMaisAbaixo = peçaVertical.getCoordenadaMaisAbaixo();
         int valorPeça = matrix[coordenadasMaisAcima.getLinha()][coordenadasMaisAcima.getColuna()];
@@ -193,7 +202,7 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         matrix[coordenadasMaisAbaixo.getLinha()][coordenadasMaisAbaixo.getColuna()] = 0;
 
         hashVertical.replace(idPeça, peçaVertical.paraCima());
-        System.out.println(this);
+        //System.out.println(this);
     }
 
     public boolean canMoveDownwards(int idPeça) {
@@ -201,7 +210,7 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         Coordenadas coordenadaMaisAbaixo = peça.getCoordenadaMaisAbaixo();
 
         if (coordenadaMaisAbaixo.getLinha() == 5
-                || matrix[coordenadaMaisAbaixo.getLinha() + 1][coordenadaMaisAbaixo.getColuna()] != 0){
+                || matrix[coordenadaMaisAbaixo.getLinha() + 1][coordenadaMaisAbaixo.getColuna()] > 0){//TODO
             return false;
         }
 
@@ -209,8 +218,8 @@ public class ForkliftPuzzleState extends State implements Cloneable {
     }
 
     public void moveDownwards(int idPeça) {
-        System.out.println("MOVE DOWNWARDS");
-        System.out.println(this);
+        //System.out.println("MOVE DOWNWARDS");
+        //System.out.println(this);
 
         PeçaVertical peçaVertical = hashVertical.get(idPeça);
 
@@ -222,7 +231,7 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         matrix[coordenadasMaisAcima.getLinha()][coordenadasMaisAcima.getColuna()] = 0;
 
         hashVertical.replace(idPeça, peçaVertical.paraBaixo());
-        System.out.println(this);
+        //System.out.println(this);
     }
 
     public int getNumLines() {
@@ -347,5 +356,92 @@ public class ForkliftPuzzleState extends State implements Cloneable {
 
     public PeçaVertical getPeçaVertical(int id){
         return hashVertical.get(id);
+    }
+
+    public double computeAmountOfBlocksInPath() {
+        double h = 0;
+        for (int j = columnForkLift+1; j < matrix.length; j++) {
+            if((matrix[lineForkLift][j])>0) {
+                h++;
+            }
+        }
+        System.out.println(this);
+        System.out.println("Custo da heuristica Blocos no caminho= "+h);
+        return h;
+    }
+
+    public double computeDistanceToDoor() {
+        int h = matrix.length-1 - columnForkLift;
+        System.out.println(this);
+        System.out.println("Custo da heuristica Distancia= "+h);
+        return h;
+    }
+
+    public double computeAmountOfBlockedBlocksInPath() {
+        double h = 0;
+        for (int j = columnForkLift+1; j < matrix.length; j++) {
+            int valor = matrix[lineForkLift][j];
+            if(valor > 0) {
+                if (canMoveOutOfTheWay(valor)) {
+                    h += 1;
+                } else {
+                    h+= 3;
+                }
+            }
+        }
+        System.out.println(this);
+        System.out.println("Custo da heuristica Blocos no caminho= "+h);
+        return h;
+    }
+
+    private boolean canMoveOutOfTheWay(int idPeça) {
+        PeçaVertical peçaAMover = hashVertical.get(idPeça);
+        if (peçaAMover == null) {
+            return false;
+        }
+
+        int tamanho = (idPeça % 10) / 2, colunaPeça = peçaAMover.getCoordenadaMaisAbaixo().getColuna();
+
+        //verifica se pode sair para cima
+        int linhaMaisAcima = peçaAMover.getCoordenadaMaisAcima().getLinha();
+        boolean flag = true;
+        forloop:
+        for (int i = linhaMaisAcima-1; i > linhaMaisAcima-1 - tamanho; i--) {
+            if (i < 0) {
+                flag = false;
+                break forloop;
+            }
+            if (matrix[i][colunaPeça] > 0) {
+                flag = false;
+                break forloop;
+            }
+        }
+        if (flag) {
+            System.out.println("Pode sair para cima");
+            return true;
+        }
+
+        //verifica se pode sair para baixo
+        int linhaMaisAbaixo = peçaAMover.getCoordenadaMaisAbaixo().getLinha();
+        flag = true;
+        forloop:
+        for (int i = linhaMaisAbaixo+1; i < linhaMaisAbaixo+1 + tamanho; i++) {
+            if (i > getNumLines()-1) {
+                flag = false;
+                break forloop;
+            }
+            if (matrix[i][colunaPeça] > 0) {
+                flag = false;
+                break forloop;
+            }
+        }
+        if (flag) {
+            System.out.println("Pode sair para baixo");
+            return true;
+        }
+
+
+
+        return false;
     }
 }

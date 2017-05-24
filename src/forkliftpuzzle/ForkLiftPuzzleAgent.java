@@ -7,12 +7,23 @@ import java.io.IOException;
 public class ForkLiftPuzzleAgent extends Agent<ForkliftPuzzleState>{
     
     protected ForkliftPuzzleState initialEnvironment;
+
+    public boolean isFirstRun() {
+        return firstRun;
+    }
+
+    public void setFirstRun(boolean firstRun) {
+        this.firstRun = firstRun;
+    }
+
+    public boolean firstRun = true;
     
     public ForkLiftPuzzleAgent(ForkliftPuzzleState environment) {
         super(environment);
         initialEnvironment = (ForkliftPuzzleState) environment.clone();
-        heuristics.add(new HeuristicTileDistance());
-        heuristics.add(new HeuristicTilesOutOfPlace());
+        heuristics.add(new HeuristicDistanceToDoor());
+        heuristics.add(new HeuristicAmountOfBlocksInPath());
+        heuristics.add(new HeuristicAmmountOfBlockedBlocksInPath());
         heuristic = heuristics.get(0);
     }
             
