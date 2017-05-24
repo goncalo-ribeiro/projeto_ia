@@ -3,21 +3,21 @@ package forkliftpuzzle;
 import agent.Action;
 
 /**
- * Created by rick_sanchez on 13/05/2017.
+ * Created by rick_sanchez on 18/05/2017.
  */
-public class ActionBackwards extends Action<ForkliftPuzzleState> {
-    public ActionBackwards(int idPeça) {
+public class ActionDownwards extends Action<ForkliftPuzzleState> {
+    public ActionDownwards(int idPeça) {
         super(1, idPeça);
     }
 
     @Override
     public void execute(ForkliftPuzzleState state) {
-        state.moveBackwards(id);
+        state.moveDownwards(id);
         state.setAction(this);
     }
 
     @Override
     public boolean isValid(ForkliftPuzzleState state) {
-       return state.canMoveBackwards(id);
+        return state.canMoveDownwards(id);
     }
 }

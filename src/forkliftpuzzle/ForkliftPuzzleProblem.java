@@ -6,16 +6,26 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import static forkliftpuzzle.ForkliftPuzzleState.SIZE;
-
 public class ForkliftPuzzleProblem extends Problem<ForkliftPuzzleState> {
 
     //private ForkliftPuzzleState goalState;
 
     public ForkliftPuzzleProblem(ForkliftPuzzleState initialState) {
         super(initialState, new ArrayList<Action>());
-        actions.add(new ActionForward());
-        actions.add(new ActionBackwards());
+        for (PeçaHorizontal peçaHorizontal:
+             initialState.peçasHorizontais) {
+            actions.add(new ActionForward(peçaHorizontal.getId()));
+            actions.add(new ActionBackwards(peçaHorizontal.getId()));
+        }
+
+        for (PeçaVertical peçaVertical:
+                initialState.peçasVerticais) {
+            actions.add(new ActionUpwards(peçaVertical.getId()));
+            actions.add(new ActionDownwards(peçaVertical.getId()));
+        }
+
+//        actions.add(new ActionForward());
+//        actions.add(new ActionUpwards());
         /*
         actions.add(new ActionUp());
         actions.add(new ActionRight());
@@ -30,10 +40,12 @@ public class ForkliftPuzzleProblem extends Problem<ForkliftPuzzleState> {
         for (Action action : actions) {
             if (action.isValid(state)) {
                 ForkliftPuzzleState sucessor = (ForkliftPuzzleState) state.clone();
+                //System.out.println("execute action" + action.getClass());
                 action.execute(sucessor);
                 successors.add(sucessor);
             }
         }
+
         return successors;
     }
     /*
@@ -42,12 +54,9 @@ public class ForkliftPuzzleProblem extends Problem<ForkliftPuzzleState> {
     }*/
 
     public boolean isGoal(ForkliftPuzzleState state) {
-        for (int i = 0; i < state.getNumLines(); i++) {
-            if (state.getTileValue(i,state.getNumColumns() - 1) == -1){
-                if (state.getTileValue(i, state.getNumColumns() - 2) == 1) {
-                    return true;
-                }
-            }
+        if (state.columnForkLift == state.getNumColumns()-2) {
+            System.out.println("finished");
+            return true;
         }
         return false;
     }

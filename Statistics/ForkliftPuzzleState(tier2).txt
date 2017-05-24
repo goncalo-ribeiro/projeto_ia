@@ -1,0 +1,22 @@
+//Puny lose vs Puny Gain
+Greedy best first search
+Solution cost: 88.0
+Num of expanded nodes: 11850
+Max frontier size: 3749
+Num of generated nodes: 88680
+
+
+//Sequencial Lose vs Sequencial Lose methodology 1
+Greedy best first search
+Solution cost: 80.0
+Num of expanded nodes: 6653
+Max frontier size: 4118
+Num of generated nodes: 50387
+
+//Sequencial Lose vs Sequencial Lose methodology 2
+
+
+
+
+
+

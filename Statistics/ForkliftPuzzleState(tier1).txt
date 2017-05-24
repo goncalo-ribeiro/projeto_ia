@@ -1,0 +1,51 @@
+//Puny lose
+Greedy best first search
+Solution cost: 69.0
+Num of expanded nodes: 12136
+Max frontier size: 3679
+Num of generated nodes: 90845
+
+//Max Lose
+Greedy best first search
+Solution cost: 715.0
+Num of expanded nodes: 1809
+Max frontier size: 3536
+Num of generated nodes: 11758
+
+//Sequencial Lose
+Greedy best first search
+Solution cost: 59.0
+Num of expanded nodes: 11915
+Max frontier size: 3721
+Num of generated nodes: 89100
+
+//The Further the Lose
+Greedy best first search
+Solution cost: 71.0
+Num of expanded nodes: 11919
+Max frontier size: 3748
+Num of generated nodes: 89462
+
+//Proporcional Lose
+Greedy best first search
+Solution cost: 55.0
+Num of expanded nodes: 12916
+Max frontier size: 3858
+Num of generated nodes: 96014
+
+//Rigth Side Counts more
+Greedy best first search
+Solution cost: 95.0
+Num of expanded nodes: 13115
+Max frontier size: 3617
+Num of generated nodes: 97335
+
+//To The Front is the Way
+Greedy best first search
+Solution cost: 101.0
+Num of expanded nodes: 9568
+Max frontier size: 3930
+Num of generated nodes: 70242
+
+
+
