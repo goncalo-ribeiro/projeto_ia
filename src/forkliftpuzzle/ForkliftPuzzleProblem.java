@@ -40,7 +40,7 @@ public class ForkliftPuzzleProblem extends Problem<ForkliftPuzzleState> {
         for (Action action : actions) {
             if (action.isValid(state)) {
                 ForkliftPuzzleState sucessor = (ForkliftPuzzleState) state.clone();
-                System.out.println("execute action" + action.getClass());
+                //System.out.println("execute action" + action.getClass());
                 action.execute(sucessor);
                 successors.add(sucessor);
             }
@@ -54,12 +54,19 @@ public class ForkliftPuzzleProblem extends Problem<ForkliftPuzzleState> {
     }*/
 
     public boolean isGoal(ForkliftPuzzleState state) {
+        /*
         for (int i = 0; i < state.getNumLines(); i++) {
             if (state.getTileValue(i,state.getNumColumns() - 1) == -1){
                 if (state.getTileValue(i, state.getNumColumns() - 2) == 1) {
                     return true;
                 }
             }
+        }
+        return false;*/
+
+        if (state.columnForkLift == state.getNumColumns()-1) {
+            System.out.println("finished");
+            return true;
         }
         return false;
     }
