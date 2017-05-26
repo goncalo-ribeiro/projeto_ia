@@ -391,10 +391,80 @@ public class ForkliftPuzzleState extends State implements Cloneable {
         }
         System.out.println(this);
         System.out.println("Custo da heuristica Blocos no caminho= "+h);
+        System.out.println("******************************************************");
+        return h;
+    }
+    private boolean canMoveOutOfTheWay(int idPeça) {
+        PeçaVertical peçaAMover = hashVertical.get(idPeça);
+        if (peçaAMover == null) {
+            return false;
+        }
+
+        int tamanho = (idPeça % 10) / 2, colunaPeça = peçaAMover.getCoordenadaMaisAbaixo().getColuna();
+
+        int linhaMaisAcima = peçaAMover.getCoordenadaMaisAcima().getLinha();
+        int linhaMaisAbaixo = peçaAMover.getCoordenadaMaisAbaixo().getLinha();
+        boolean flag = true;
+
+        //verifica se pode sair para cima
+        forloop:
+        for (int i = linhaMaisAcima-1; i > linhaMaisAcima - tamanho; i--) {
+            if (i < 0) {
+                flag = false;
+                break forloop;
+            }
+            if (matrix[i][colunaPeça] > 0) {
+                flag = false;
+                break forloop;
+            }
+        }
+        if (flag) {
+            System.out.println("Pode sair para cima");
+            return true;
+        }
+
+        //verifica se pode sair para baixo
+        flag = true;
+        forloop:
+        for (int i = linhaMaisAbaixo+1; i < linhaMaisAbaixo + tamanho; i++) {
+            if (i > getNumLines()-1) {
+                flag = false;
+                break forloop;
+            }
+            if (matrix[i][colunaPeça] > 0) {
+                flag = false;
+                break forloop;
+            }
+        }
+        if (flag) {
+            System.out.println("Pode sair para baixo");
+            return true;
+        }
+
+
+
+        return false;
+    }
+
+    public double computeAmountOfBlockedBlocksInPathOriginal() {
+        double h = 0;
+        for (int j = columnForkLift+1; j < matrix.length; j++) {
+            int valor = matrix[lineForkLift][j];
+            if(valor > 0) {
+                if (canMoveOutOfTheWayOriginal(valor)) {
+                    h += 1;
+                } else {
+                    h+= 3;
+                }
+            }
+        }
+        System.out.println(this);
+        System.out.println("Custo da heuristica Blocos no caminho= "+h);
+        System.out.println("******************************************************");
         return h;
     }
 
-    private boolean canMoveOutOfTheWay(int idPeça) {
+    private boolean canMoveOutOfTheWayOriginal(int idPeça) {
         PeçaVertical peçaAMover = hashVertical.get(idPeça);
         if (peçaAMover == null) {
             return false;

@@ -23,6 +23,7 @@ public class ForkLiftPuzzleAgent extends Agent<ForkliftPuzzleState>{
         initialEnvironment = (ForkliftPuzzleState) environment.clone();
         heuristics.add(new HeuristicDistanceToDoor());
         heuristics.add(new HeuristicAmountOfBlocksInPath());
+        heuristics.add(new HeuristicAmmountOfBlockedBlocksInPathOriginal());
         heuristics.add(new HeuristicAmmountOfBlockedBlocksInPath());
         heuristic = heuristics.get(0);
     }
