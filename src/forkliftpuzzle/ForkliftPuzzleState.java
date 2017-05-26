@@ -514,4 +514,22 @@ public class ForkliftPuzzleState extends State implements Cloneable {
 
         return false;
     }
+
+    public double computeAmmountOfBlocksOnTheColumnsWhereThereAreBlocksInThePath() {
+        double h = 0;
+        for (int j = columnForkLift+1; j < matrix.length; j++) {
+            int valor = matrix[lineForkLift][j];
+            if(valor > 0) {
+                for (int i = 0; i < getNumLines()-1; i++) {
+                    if (matrix[i][j] > 0){
+                        h++;
+                    }
+                }
+            }
+        }
+        System.out.println(this);
+        System.out.println("Custo da heuristica Blocos no caminho= "+h);
+        System.out.println("******************************************************");
+        return h;
+    }
 }

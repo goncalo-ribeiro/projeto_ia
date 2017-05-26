@@ -5,14 +5,14 @@ import agent.Heuristic;
 /**
  * Created by rick_sanchez on 24/05/2017.
  */
-public class HeuristicAmmountOfBlockedBlocksInPathOriginal extends Heuristic<ForkliftPuzzleProblem, ForkliftPuzzleState> {
+public class HeuristicAmmountOfBlocksOnTheColumnsWhereThereAreBlocksInThePath extends Heuristic<ForkliftPuzzleProblem, ForkliftPuzzleState> {
 
     public double compute(ForkliftPuzzleState state){
-        return state.computeAmountOfBlockedBlocksInPathOriginal();
+        return state.computeAmmountOfBlocksOnTheColumnsWhereThereAreBlocksInThePath();
     }
 
     @Override
     public String toString(){
-        return "Original Amount Of Blocked Blocks In Path";
+        return "Ammount Of Blocks On The Columns Where There Are Blocks On The Path";
     }
 }

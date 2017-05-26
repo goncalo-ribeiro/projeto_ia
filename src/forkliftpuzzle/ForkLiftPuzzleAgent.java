@@ -25,6 +25,7 @@ public class ForkLiftPuzzleAgent extends Agent<ForkliftPuzzleState>{
         heuristics.add(new HeuristicAmountOfBlocksInPath());
         heuristics.add(new HeuristicAmmountOfBlockedBlocksInPathOriginal());
         heuristics.add(new HeuristicAmmountOfBlockedBlocksInPath());
+        heuristics.add(new HeuristicAmmountOfBlocksOnTheColumnsWhereThereAreBlocksInThePath());
         heuristic = heuristics.get(0);
     }
             
