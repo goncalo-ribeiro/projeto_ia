@@ -13,6 +13,6 @@ public class HeuristicAmmountOfBlockedBlocksInPath extends Heuristic<ForkliftPuz
 
     @Override
     public String toString(){
-        return "*Revisão* Amount Of Blocked Blocks In Path";
+        return "Amount Of Blocked Blocks In Path";
     }
 }
